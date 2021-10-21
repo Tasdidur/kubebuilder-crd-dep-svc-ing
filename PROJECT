@@ -1,0 +1,16 @@
+domain: tapi.com
+layout:
+- go.kubebuilder.io/v3
+projectName: kbcrd
+repo: github.com/Tasdidur/kubebuilderProject/kbCrd
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: tapi.com
+  group: kapi
+  kind: Kcrd
+  path: github.com/Tasdidur/kubebuilderProject/kbCrd/api/v1
+  version: v1
+version: "3"

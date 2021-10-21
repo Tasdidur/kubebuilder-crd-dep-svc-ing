@@ -1,0 +1,7 @@
+apiVersion: kapi.tapi.com/v1
+kind: Kcrd
+metadata:
+  name: kcrd-sample
+spec:
+  # Add fields here
+  foo: bar

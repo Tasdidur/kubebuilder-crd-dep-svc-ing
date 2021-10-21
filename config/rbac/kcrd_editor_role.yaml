@@ -1,0 +1,24 @@
+# permissions for end users to edit kcrds.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: kcrd-editor-role
+rules:
+- apiGroups:
+  - kapi.tapi.com
+  resources:
+  - kcrds
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - kapi.tapi.com
+  resources:
+  - kcrds/status
+  verbs:
+  - get
